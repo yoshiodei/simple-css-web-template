@@ -8,6 +8,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: helvetica;
+
 }
 
 
@@ -46,6 +48,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     margin-left: 3.5rem;
+    letter-spacing: 1px;
 }
 
 .landing__list__item:last-child{
@@ -57,13 +60,144 @@
 
 .landing__main {
     display: flex;
+    padding: 80px 180px;
+    height: 70vh;
 }
 
 .landing__main__text__div{
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    justify-content: space-between;
+}
+
+.landing__main__heading{
+    font-size: 2.5rem;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.landing__main__para {
+    margin-bottom: 20px;
+}
+
+.landing__main__btn1,.landing__main__btn2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.landing__main__btn1{
+    margin-right: 15px;
+    background-color: var(--primarycolour);
+    color: var(--bgcolour);
+    
+}
+
+.landing__main__btn2{
+    border: 1px solid darkgrey;
+    color: var(--fontcolour);
 }
 
 .landing__main__img__div{
     flex: 1;
+}
+
+.landing__main__img{
+    width: 550px;
+    height: 350px;
+}
+
+.services {
+    height: auto;
+    padding:0;
+}
+
+.services__heading {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.services__cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 180px;
+}
+
+.services__cards__card{
+    text-align: center;
+    height: 48vh;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px darkgrey;
+    color: var(--fontcolour);
+    overflow: hidden;
+}
+
+.services__cards__card__img {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.services__cards__card__heading{
+    margin-bottom: 15px;
+}
+
+.services__cards__card__para {
+    line-height: 1;
+    font-size: 0.9rem;
+}
+
+.about {
+    display: flex;
+    padding: 40px 160px ;
+    justify-content: space-between
+}
+
+.about__img__div__img{
+    width: 470px;
+}
+
+.about__text__div{
+    padding:25px 0 0 0px; 
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__heading{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.about__para{
+    margin-bottom: 25px;
+}
+
+.about__btn{
+    text-decoration: none;
+    background-color: var(--primarycolour);
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: var(--bgcolour);
+}
+
+.footer {
+    height: 20vh;
+    padding: 40px 100px 10px;
+    text-align: center
+}
+
+.footer__heading{
+    margin-bottom: 6px;
 }
 
